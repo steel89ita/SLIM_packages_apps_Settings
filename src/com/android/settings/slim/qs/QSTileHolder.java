@@ -65,6 +65,10 @@ public class QSTileHolder {
         switch (tileType) {
             case TILE_ADD_DELETE:
                 break;
+            case QSConstants.TILE_CELLULAR:
+                resourceName = "ic_qs_signal_full_4";
+                stringId = R.string.qs_tile_cellular_data;
+                break;
             case QSConstants.TILE_WIFI:
                 resourceName = "ic_qs_wifi_full_4";
                 stringId = R.string.qs_tile_wifi;
@@ -73,17 +77,9 @@ public class QSTileHolder {
                 resourceName = "ic_qs_bluetooth_on";
                 stringId = R.string.qs_tile_bluetooth;
                 break;
-            case QSConstants.TILE_INVERSION:
-                resourceName = "ic_invert_colors_disable";
-                stringId = R.string.qs_tile_display_inversion;
-                break;
-            case QSConstants.TILE_CELLULAR:
-                resourceName = "ic_qs_signal_full_4";
-                stringId = R.string.qs_tile_cellular_data;
-                break;
-            case QSConstants.TILE_AIRPLANE:
-                resourceName = "ic_signal_airplane_disable";
-                stringId = R.string.qs_tile_airplane_mode;
+            case QSConstants.TILE_LOCATION:
+                resourceName = "ic_qs_location_on";
+                stringId = R.string.qs_tile_location;
                 break;
             case QSConstants.TILE_ROTATION:
                 resourceName = "ic_portrait_to_auto_rotate";
@@ -93,13 +89,17 @@ public class QSTileHolder {
                 resourceName = "ic_signal_flashlight_disable";
                 stringId = R.string.qs_tile_flashlight;
                 break;
-            case QSConstants.TILE_LOCATION:
-                resourceName = "ic_qs_location_on";
-                stringId = R.string.qs_tile_location;
+            case QSConstants.TILE_AIRPLANE:
+                resourceName = "ic_signal_airplane_disable";
+                stringId = R.string.qs_tile_airplane_mode;
                 break;
             case QSConstants.TILE_CAST:
                 resourceName = "ic_qs_cast_on";
                 stringId = R.string.qs_tile_cast_screen;
+                break;
+            case QSConstants.TILE_INVERSION:
+                resourceName = "ic_invert_colors_disable";
+                stringId = R.string.qs_tile_display_inversion;
                 break;
             case QSConstants.TILE_HOTSPOT:
                 resourceName = "ic_hotspot_disable";
